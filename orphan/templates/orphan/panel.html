@@ -1,0 +1,45 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+	<title>Donor Panel</title>
+</head>
+<body>
+	<table class="table  table-bordered">
+		<thead>
+			<tr>
+                <th>No.</th>
+				<th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+				<th>Age</th>
+				<th>Guardian</th>
+                <th>Education Status</th>
+				<th>Current Donor</th>
+				<th>Donate</th>
+			</tr>
+		</thead>
+			{% for x in mymembers %}
+				<tr>
+					<td>{{forloop.counter}}</td>
+				   <td>{{ x.first_name}}</td>
+				   <td>{{ x.middle_name}}</td>
+				   <td>{{ x.last_name}}</td>
+				   <td>{{ x.gender}}</td>
+				   <td>{{ x.age}}</td>
+				   <td>{{ x.guardian}}</td>
+                   <td>{{ x.education_status}}</td>
+                   <td>{{ x.current_donor}}</td>
+				   <td><a href="{% url 'donate_now' x.id %}" class="btn btn-warning">Donate</a></td>	   
+				</tr>
+		    {%endfor%}
+
+	</table>
+
+</body>
+</html>

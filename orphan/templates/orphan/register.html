@@ -1,0 +1,54 @@
+{% load static%}
+{% load crispy_forms_tags%}
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.konnectplugins.com/proclinic/Horizontal/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jan 2022 10:42:12 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+	<!-- Animations CSS -->
+	<link rel="stylesheet" href="{% static 'animate.css' %}">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+	<link rel="stylesheet" href="{% static 'responsive.css' %}">
+	<!-- morris charts -->
+	<!-- jvectormap -->
+	<link rel="stylesheet" href="{% static 'jquery-jvectormap.css' %}">
+	<script src="{% static 'modernizr.min.js' %}"></script>
+</head>
+	<div class="wrapper">
+		<!-- Page Content -->
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 auth-box">
+						<div class="proclinic-box-shadow">
+							<!-- Page Title -->
+							<h3 class="widget-title">Sign Up</h3>
+							<!-- /Page Title -->
+
+							<!-- Form -->
+							<form class="widget-form" method="post">
+								{% csrf_token%}
+								{{form|crispy}}
+								<button type="submit">sign-up</button>
+								<p class="text-center"> have account? <a href="{% url 'admin_login' %}">login</a></p>
+								
+							</form>
+							<!-- /Form -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Page Content -->
+	</div>
+	</body>
+
+
+<!-- Mirrored from www.konnectplugins.com/proclinic/Horizontal/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jan 2022 10:42:12 GMT -->
+</html>
