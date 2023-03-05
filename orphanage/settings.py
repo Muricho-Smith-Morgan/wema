@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o(4q_8m3g0p(@#@*4-u#3nokvhc8li^fxwt1sgdjao=d0%!r9*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['morgansmith.pythonanywhere.com', '127.0.0.1',]
 
 
 # Application definition
@@ -122,15 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/css'),
-    os.path.join(BASE_DIR, 'static/images'),
-    os.path.join(BASE_DIR, 'static/js'),
-    os.path.join(BASE_DIR, 'static/lib'),
-    os.path.join(BASE_DIR, 'static/bootstrap/icons'),
-    os.path.join(BASE_DIR, 'static/bootstrap/css'),
-    os.path.join(BASE_DIR, 'static/bootstrap/js'),
+    BASE_DIR, 'static',
 
 ]
+
+
 
 MEDIA_URL = 'mediaFiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')

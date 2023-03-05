@@ -17,12 +17,12 @@
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="{% static 'flaticon/font/flaticon.css' %}" rel="stylesheet">
-        <link href="{% static 'animate/animate.min.css' %}" rel="stylesheet">
-        <link href="{% static 'owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/flaticon/font/flaticon.css' %}" rel="stylesheet">
+        <link href="{% static 'css/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="{% static 'style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
     </head>
 
     <body>
@@ -196,7 +196,7 @@
                 <div class="owl-carousel causes-carousel">
                     <div class="causes-item">
                         <div class="causes-img">
-                            <img src="img/causes-1.jpg" alt="Image">
+                            <img src="{% static 'img/causes-1.jpg' %}" alt="Image">
                         </div>
                         <div class="causes-progress">
                             <div class="progress">
@@ -220,7 +220,7 @@
                     </div>
                     <div class="causes-item">
                         <div class="causes-img">
-                            <img src="img/causes-2.jpg" alt="Image">
+                            <img src="{% static 'img/causes-2.jpg' %}" alt="Image">
                         </div>
                         <div class="causes-progress">
                             <div class="progress">
@@ -244,7 +244,7 @@
                     </div>
                     <div class="causes-item">
                         <div class="causes-img">
-                            <img src="img/causes-3.jpg" alt="Image">
+                            <img src="{% static 'img/causes-3.jpg' %}" alt="Image">
                         </div>
                         <div class="causes-progress">
                             <div class="progress">
@@ -268,7 +268,7 @@
                     </div>
                     <div class="causes-item">
                         <div class="causes-img">
-                            <img src="img/causes-4.jpg" alt="Image">
+                            <img src="{% static 'img/causes-4.jpg' %}" alt="Image">
                         </div>
                         <div class="causes-progress">
                             <div class="progress">
@@ -371,17 +371,17 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="{% static 'easing/easing.min.js' %}"></script>
-        <script src="{% static 'owlcarousel/owl.carousel.min.js' %}"></script>
-        <script src="{% static 'waypoints/waypoints.min.js' %}"></script>
-        <script src="{% static 'counterup/counterup.min.js' %}"></script>
-        <script src="{% static 'parallax/parallax.min.js' %}"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
         
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
 
         <!-- Template Javascript -->
-        <script src="{% static 'main.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
     </body>
 </html>
